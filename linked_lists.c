@@ -12,7 +12,7 @@ struct node *head=NULL;
 struct node *end=NULL;
 
 
-// insert at begginig
+// insert at beggining
 void start(int val)
 {
     neww=(struct node*) malloc(sizeof(struct node));
@@ -20,6 +20,7 @@ void start(int val)
     head=neww;
     end=neww;
 }
+//insert at end
 void last(int val)
 {
      neww=(struct node*) malloc(sizeof(struct node));
@@ -49,7 +50,7 @@ void delfirst()
     struct node *temp;
     temp=head;
     head=temp->next;
-    free( temp);
+    free(temp);
 }
 void delend()
 {
